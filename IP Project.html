@@ -1,0 +1,340 @@
+<htmL>
+<head>
+<title>Fundamental Analysis</title>
+<div id="piechart"></div>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+      
+      google.charts.load('current', {'packages':['corechart']});
+
+      
+      google.charts.setOnLoadCallback(drawSarahChart);
+
+      
+      google.charts.setOnLoadCallback(drawAnthonyChart);
+	  
+	  google.charts.setOnLoadCallback(drawRobertChart);
+
+      
+      function drawSarahChart() {
+
+        
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          ['Promoter', 51.5],
+          ['FII', 7.94],
+          ['DII', 12.62],
+          ['Public', 27.94]
+        ]);
+
+        
+        var options = {title:'IOCL:Share Holding',
+                       width:450,
+                       height:500};
+
+        
+        var chart = new google.visualization.PieChart(document.getElementById('Sarah_chart_div'));
+        chart.draw(data, options);
+      }
+
+      
+      function drawAnthonyChart() {
+
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          ['Promoter', 52.98],
+          ['FII', 12.66],
+          ['DII', 21.99],
+          ['Public', 12.05],
+          ['Others', 0.32]
+        ]);
+
+        var options = {title:'BPCL:Share Holding',
+                       width:450,
+                       height:500};
+
+        var chart = new google.visualization.PieChart(document.getElementById('Anthony_chart_div'));
+        chart.draw(data, options);
+      }
+	  function drawRobertChart() {
+
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          ['Promoter', 54.9],
+          ['FII', 20.19],
+          ['DII', 15.12],
+		  ['Public', 9.78],
+		  ['Others', 0.01]
+        ]);
+
+        var options = {title:'HPCL:Share Holding',
+                       width:450,
+                       height:500};
+
+        var chart = new google.visualization.PieChart(document.getElementById('Robert_chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+</head>
+<style>
+p,.center.p{
+   font-size:30px;
+   color: #E60965;
+   }
+body{
+   background-image: linear-gradient(to bottom right, #EDCDBB,#BF9270,#E9DAC1,#54BAB9);
+}
+ul {
+  font-size:40px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #980F5A;
+}
+
+li {
+  background-color:#980F5A;
+  float: left;
+  text-size:30px;
+}
+td{
+   width:5;
+   height:10;
+   }
+th{
+   width:6;
+   height:12;
+   }
+
+li a {
+   font-size:19px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 30px 33px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #D22779;
+}
+button {
+  float: center ;
+  padding: 5px;
+  margin-top: 5px;
+  margin-right:5px;
+  background: grey	;
+  font-size: 20px;
+  height:20%
+  border: none;
+  cursor: pointer;
+}
+table{
+   font-size:0px;
+   color:black;	   
+   class:center;
+   height:75%;
+   width:75% ;
+   }
+table, th, td {
+  border: 5px solid	 ;
+  border-collapse: collapse;
+}
+th, td {
+  background-color:#980F5A ;
+     color:white;
+  font-size:30px;
+}
+h1{
+   color:white;
+   background-color:#980F5A;	
+   
+   }
+.pipos {
+  display: inline-block;
+  border: none;
+  padding: 1rem 1rem;
+  vertical-align: middle
+  background-color:none;
+}
+p a{
+  color: #FFF0F0;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+p a:hover {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+p a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+ input{
+    font-size:20px;
+    padding:5px  10px; 
+    align:center ;
+    height:8%;
+	width:18%;
+	
+	}
+pre a{
+     color:#DACC96;
+  background-color: transparent;
+  text-decoration: underline;
+  }
+pre a:hover {
+  color: #3D0000;
+  background-color: transparent;
+  text-decoration: underline;
+}
+pre a:active {
+  color: #F0A500;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+</style>
+<body>
+<ul>
+  <li><a class="active" href="#home"><b>Home</b></a></li>
+  <li><a href="#news"><b>News</b></a></li>
+  <li><a href="#Portfolio"><b>Portfolio</b></a></li>
+  <li><a href="#Commodities"><b>Commodities</b></a></li>
+  <li><a href="#Currency"><b>Currency</b></a></li>
+  <li><a href="#Mutual Funds"><b>Mutual Funds</b></a></li>
+  <li><a href="#IPO"><b>IPO</b></a></li>
+   <li><a href="#Get Pro"><b>Get Pro</b></a></li>
+   <input align="center"  type="text" placeholder="Search Any Stock" name="search" ></input>
+      <button  type="submit"><i>Search</i></button>
+</ul>
+<p align="center"  > <u>Fundamental Analysis Of Three Stocks Related To Refineries(Petroleum)</u> <br>
+(1) IOCL-Indian Oil Corporation Limited.<br>
+(2) BPCL-Bharat Petroleum Corporation of India.<br>
+(3) HPCL-Hindustan Petroleum Corporation of India.</p>
+
+<h1 align="center"><b>FUNDAMENTAL_ANALYSIS</b></h1>
+<table border="5" align="center">
+<tr>
+<th colspan="3">Comparision <br> Quantities</th>
+<th colspan="3">IOCL</th>
+<th colspan="3">BPCL</th>
+<th colspan="3">HPCL</th>
+
+</tr>
+<tr>
+<th colspan="3"><pre>Operating Activities<br>(in Cr*)</pre></th>
+<td colspan="3"><center><pre>49,861</pre></center></td>
+<td colspan="3"><center><pre>23,553</pre></center></td>
+<td colspan="3"><center><pre>17,829</pre></center></td>
+</tr>
+<tr>
+<th colspan="3"><pre>Net Cash Flow<br>(in Cr*)</pre></th>
+<td colspan="3"><center><pre>-653</pre></center></td>
+<td colspan="3"><center><pre>7,000</pre></center></td>
+<td colspan="3"><center><pre>841</pre></center></td>
+</tr>
+<tr>
+<th colspan="3"><pre>Sales<br>(in Cr*)<br>(Mar 2021)</pre></th>
+<td colspan="3"><center><pre>363,949</pre></center></td>
+<td colspan="3"><center><pre>230,162</pre></center></td>
+<td colspan="3"><center><pre>233,248</pre></center></td>
+</tr>
+<tr>
+<th colspan="3"><pre>Total Expenditure<br>(in Cr*)<br>(Mar 2021)</pre></th>
+<td colspan="3"><center><pre>334,306</pre></center></td>
+<td colspan="3"><center><pre>334,306</pre></center></td>
+<td colspan="3"><center><pre>334,306</pre></center></td>
+</tr>
+<tr>
+<th colspan="3"><pre>EBIT<br>(in Cr*)<br>(Mar 2021)</pre></th>
+<td colspan="3"><center>33,143<pre></pre></center></td>
+<td colspan="3"><center>24,480<pre></pre></center></td>
+<td colspan="3"><center>15,021<pre></pre></center></td>
+</tr>
+<tr>
+<th colspan="3"><pre>Net Profit<br>(in Cr*)<br>(Mar 2021)</pre></th>
+<td colspan="3"><center>20,565<pre></pre></center></td>
+<td colspan="3"><center>17,645<pre></pre></center></td>
+<td colspan="3"><center>10,524<pre></pre></center></td>
+</tr>
+<tr>
+<th colspan="3"><pre>Dividend/Share <br>(Rs.)<br>(Mar 2021)</pre></th>
+<td colspan="3"><center><pre>12.00</pre></center></td>
+<td colspan="3"><center><pre>79.00</pre></center></td>
+<td colspan="3"><center><pre>22.75</pre></center></td>
+</tr>
+<tr>
+<th colspan="3"><pre>Gross Profit Margin (%)<br>(Mar 2021)</pre></th>
+<td colspan="3"><center><pre>12.11</pre></center></td>
+<td colspan="3"><center><pre>10.23</pre></center></td>
+<td colspan="3"><center><pre>7.99</pre></center></td>
+</tr>
+<tr>
+<th colspan="3"><pre>ROCE (%)<br>(Mar 2021)</pre></th>
+<td colspan="3"><center><pre>17.19</pre></center></td>
+<td colspan="3"><center><pre>18.46</pre></center></td>
+<td colspan="3"><center><pre>20.92</pre></center></td>
+</tr>
+<tr>
+<th colspan="3"><pre>Return on Networth /<br> Equity (%)<br>(Mar 2021)</pre></th>
+<td colspan="3"><center><pre>19.34</pre></center></td>
+<td colspan="3"><center><pre>30.18</pre></center></td>
+<td colspan="3"><center><pre>28.00</pre></center></td>
+</tr>
+<tr>
+<th colspan="3"><pre>Debt to Equity (x)<br>(Mar 2021)</pre></th>
+<td colspan="3"><center><pre>0.97</pre></center></td>
+<td colspan="3"><center><pre>0.75</pre></center></td>
+<td colspan="3"><center><pre>1.12</pre></center></td>
+</tr>
+<tr>
+<th colspan="3"><pre>P/E (x)<br>(Mar 2021)</pre></th>
+<td colspan="3"><center><pre>3.90</pre></center></td>
+<td colspan="3"><center><pre>5.23</pre></center></td>
+<td colspan="3"><center><pre>3.32</pre></center></td>
+</tr>
+<tr>
+<th colspan="3"><pre>P/B (x)<br>(Mar 2021)</pre></th>
+<td colspan="3"><center><pre>0.75</pre></center></td>
+<td colspan="3"><center><pre>1.67</pre></center></td>
+<td colspan="3"><center><pre>0.89</pre></center></td>
+</tr>
+<tr>
+<th colspan="3"><pre>EV/EBITDA (x)<br>(Mar 2021)</pre></th>
+<td colspan="3"><center><pre>4.34</pre></center></td>
+<td colspan="3"><center><pre>5.16</pre></center></td>
+<td colspan="3"><center><pre>5.16</pre></center></td>
+</tr>
+<tr>
+<th colspan="3" ><pre>For Further analysis please vist:</pre></th>
+<td colspan="3"><center><pre><a href="https://www.bseindia.com/stock-share-price/indian-oil-corporation-ltd/ioc/530965/financials-annual-reports/">IOCL</a></pre></center></td>
+<td colspan="3"><center><pre><a href="https://www.bseindia.com/stock-share-price/bharat-petroleum-corporation-ltd/bpcl/500547/financials-annual-reports/ ">BPCL</a></pre></center></td>
+<td colspan="3"><center><pre><a href="https://www.bseindia.com/stock-share-price/hindustan-petroleum-corporation-ltd/hindpetro/500104/financials-annual-reports/">HPCL</a></pre></center></td>
+</tr>
+</table>
+
+<p  align="center">This Analysis is only based on data from <a href="https://www.moneycontrol.com/"> Moneycontrol.com</a></p>
+	<a>
+        <div class='pipos' id="Sarah_chart_div" ></div>
+        <div class='pipos' id="Anthony_chart_div" ></div>
+		<div class='pipos' id="Robert_chart_div" ></div>
+	</a>
+
+
+</body>
+</html>
